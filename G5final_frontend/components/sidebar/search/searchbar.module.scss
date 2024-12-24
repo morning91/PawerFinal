@@ -1,0 +1,32 @@
+.search-bar{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    gap:1em;
+    position: relative;
+    input{
+        border:1px solid #EAEAEA;
+        border-radius: 4px;
+        line-height: 36px;
+        padding: 2.5% 4.5%;
+        color: #7F7F7F;
+    }
+    
+    .search{
+        color: white;
+        padding: 4.5% 6.5%;
+        border-radius: 2px;
+        letter-spacing: 0.2em;
+        font-size: 16px;
+    }
+    .clear-icon{
+        position: absolute;
+        right: 80px;
+        font-size: 1.2rem;
+        color: #ccc;
+        bottom: 15px;
+    }
+
+}
+
+ 

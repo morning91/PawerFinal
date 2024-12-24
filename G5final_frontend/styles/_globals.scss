@@ -1,0 +1,125 @@
+// 全站配色 colors
+$primary: #22355c;
+$warning: #f4b13e;
+$danger: #c14545;
+$success: #5aac4d;
+$secondary: #f5f5f5;
+$darkgray: #646464;
+
+// 麵包屑設定
+$breadcrumb-font-size: 0.875rem;
+// margin-block 40px 要討論
+
+// 分頁籤設定
+$pagination-bg: transparent;
+$pagination-padding-x: auto;
+$pagination-border-color: 0px;
+$pagination-color: #888888;
+$pagination-hover-color: $secondary;
+$pagination-hover-bg: rgba($warning, 0.6);
+$pagination-active-bg: $warning;
+$pagination-active-border-color: $warning;
+$headings-font-family: 'Open Sans', sans-serif;
+$headings-font-weight: 800;
+$pageblock: block;
+$selectnone:none;
+
+// 圓角、Button樣式調整
+$btn-border-radius: 2px;
+$border-radius: 0.25rem;
+$border-radius-sm: 0.125rem;
+
+$card-border-width: 0px;
+$box-shadow: 0 0 22px 3px rgba(0, 0, 0, 0.08);
+
+@import '~bootstrap/scss/bootstrap';
+// ↓↓↓  其它客製樣式要寫在這行的"下面" ↓↓↓
+
+// Google Open Sans 字體
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// Google Roboto 字體
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// 定義中文字體用
+body {
+  font-family: 'Noto Sans', 'Noto Sans TC', 'Noto Sans TC Regular', Helvetica,
+    Arial, 'PingFang TC', '苹方-繁', 'Heiti TC', '黑體-繁', 'Microsoft JhengHei',
+    '微軟正黑體', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background-color: $secondary;
+}
+
+// CKEditor 樣式
+.ck{
+  height: 32rem;
+}
+
+.page-block {
+  display: $pageblock !important;
+}
+
+.select-rwd-none{
+  display: $selectnone;
+}
+
+.btn-primary {
+  &:hover {
+    border: 1px solid $warning;
+    color: $primary;
+    background-color: $warning;
+  }
+}
+
+.btn-warning {
+  color: $primary;
+  &:hover {
+    border: 1px solid $primary;
+    color: white;
+    background-color: $primary;
+  }
+}
+
+.page-item {
+  text-align: center;
+  line-height: 2rem;
+  a {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4px;
+  }
+}
+
+// 表單required * 樣式
+.required {
+  position: relative;
+  &::after {
+    content: '*';
+    font-size: 1.5rem;
+    color: $danger;
+    position: absolute;
+    top: -0.25rem;
+    padding-left: 0.25rem;
+  }
+}
+//麵包屑高度
+.breadcrumb{
+    margin-block: 40px;
+}
+// 網頁內容適應高度
+main {
+  padding-top: 84px;
+}
+
+// RWD樣式管理 斷點:992px & 768px
+
+@media (max-width: 768px) {
+  .breadcrumb{
+    margin-block: 20px;
+}
+  main {
+    padding-top: 60px;
+  }
+}
+

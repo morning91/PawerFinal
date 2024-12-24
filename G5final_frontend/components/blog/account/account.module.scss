@@ -1,0 +1,17 @@
+.blog-account {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    .avatar {
+        border-radius: 50%;
+        background-color: #ccc;
+        object-fit: cover;
+    }
+    
+    .text {
+        margin: 0;
+        color: hsla(0, 0%, 0%, 0.6);
+    }
+    
+}
+

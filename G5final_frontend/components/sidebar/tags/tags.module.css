@@ -1,0 +1,16 @@
+.tag-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  gap: 4px;
+}
+.tag-section .tag {
+  padding: 4px 12px;
+  color: white;
+  border: 1px solid #EDF0F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}/*# sourceMappingURL=tags.module.css.map */

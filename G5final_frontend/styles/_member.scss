@@ -1,0 +1,202 @@
+.mb-sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px 36px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 20px;
+
+  .img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .title {
+    padding-bottom: 16px;
+    border-bottom: 2px dashed #eaeaea;
+    color: #22355c;
+    margin-bottom: 0px;
+  }
+  .nav {
+    list-style: none;
+  }
+  .nav-item {
+    border: rgba(0, 0, 0, 0.05) 1px solid;
+    font-size: 14px;
+  }
+  .nav-link {
+    color: #22355c;
+  }
+
+  li {
+    display: block;
+  }
+  .active {
+    background-color: #f4b13e;
+  }
+}
+
+.mb-content {
+  padding: 30px 36px;
+  background-color: #fff;
+  border-radius: 4px;
+
+  .avatar-container {
+    cursor: pointer;
+  }
+  .avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatar-img{
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+
+  .camera-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+    background-color: $primary;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+}
+
+.mb-card {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 30px 36px;
+  margin: 20px 0;
+  font-size: 16px;
+
+  .title {
+    color: $primary;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .row {
+    margin-bottom: 7px;
+  }
+  .row:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.required::after {
+  content: ' *';
+  color: $danger;
+  font-weight: bold;
+}
+
+.mb-order-product {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #646464;
+
+  .header {
+    display: contents; /* 讓 header 繼承行和列的樣式 */
+    .cell {
+      font-weight: bold;
+      background-color: #f5f5f5;
+    }
+  }
+
+  .row {
+    display: contents; /* 使用 grid 時，讓 row 繼承 grid 樣式 */
+  }
+
+  .cell {
+    padding: 8px;
+    color: #646464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.eye-btn {
+  all: unset; /* 清除所有預設樣式 */
+  cursor: pointer; /* 設定手型游標 */
+  display: inline-flex; /* 保持圖標對齊 */
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%; /* 將圖片從容器的一半開始(圖片頂端) */
+  transform: translateY(-50%); /* 將圖片修正從頂端開始的偏移問題 */
+  right: 15px;
+}
+
+.react-datepicker-wrapper {
+  display: block;
+  width: 100%;
+  border-radius: var(--bs-border-radius);
+}
+.react-datepicker__input-container .react-datepicker__calendar-icon {
+  right: 0;
+  top: 0;
+}
+.react-datepicker__input-container .react-datepicker__calendar-icon {
+  padding: 0.62rem !important;
+}
+.react-datepicker__input-container input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected,
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  background-color: $warning !important;
+}
+
+.mb-offcanvas {
+  padding-top: 84px;
+  width: 350px !important; 
+}

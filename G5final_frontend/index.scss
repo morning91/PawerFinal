@@ -1,0 +1,49 @@
+//global
+@import "./styles/globals";
+
+// Navbar && Footer && Sidebar
+@import "./styles/navAndfooter";
+@import "./styles/sidebar";
+
+// Loader
+@import "./styles/loader";
+
+// home
+@import "./styles/home.scss";
+
+// member
+@import "./styles/member.scss";
+
+// product
+@import "./styles/productlist.scss";
+@import "./styles/productdetail.scss";
+
+// cart
+@import "./styles/cart.scss";
+@import "./styles/cart-info.scss";
+@import "./styles/cart-success.scss";
+@import "./styles/fail.scss";
+@import "./styles/bread.scss";
+
+// join
+@import "./styles/join.scss";
+@import "./styles/join-edit.scss";
+
+// blog
+@import "./styles/_bl-create";
+@import "./styles/bl-edit";
+@import "./styles/bl-list";
+@import "./styles/bl-post";
+@import "./styles/bl-preview";
+
+// pet
+@import "./styles/pet-alert";
+@import "./styles/pet-detail";
+@import "./styles/pet-list";
+@import "./styles/pet-mydetail";
+@import "./styles/pet-reserve";
+@import "./styles/pet-onebyone";
+@import "./styles/pet-chat";
+@import "./styles/pet";
+
+

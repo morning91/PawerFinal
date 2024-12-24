@@ -1,0 +1,92 @@
+.PT-list {
+  .no-underline {
+    text-decoration: none;
+  }
+  .bgheight{
+    min-height: 40vh;
+  }
+  /* 師資卡片 */
+  .pet-teachercard-yen {
+    margin: 10px;
+    padding: 0;
+    border-radius: 14px;
+    overflow: hidden;
+
+    .contain {
+      padding: 10px;
+      text-align: center;
+      justify-content: center;
+      h4,
+      p {
+        display: flex;
+        justify-content: center;
+      }
+      .hover-btn {
+        display: none;
+      }
+      @media (min-width: 431px) {
+        br {
+          display: none;
+        }
+      }
+    }
+    .contain-hover {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 2rem;
+      color: white;
+      // overflow: hidden;
+      .hover-text {
+        font-size: 32px;
+      }
+    }
+    @media (min-width: 431px) {
+      &:hover {
+        .contain-hover {
+          display: block;
+        }
+        img {
+          filter: brightness(0.6);
+          /* 調整亮度，越接近 0 越黑 */
+          opacity: 0.8;
+          /* 控制透明度，1 是完全不透明，0 是完全透明 */
+        }
+        .contain {
+          background: #f4b13e;
+          .text {
+            display: none;
+          }
+        }
+        .hover-btn {
+          display: block;
+          color: white;
+        }
+      }
+    }
+  }
+  /* 溝通師廣告 */
+  .pet-advertise-yen {
+    width: 100%;
+    background: #edca5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px;
+    .pet-btnApply-yen {
+      background-color: #f4b13e;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+    }
+    @media (max-width: 547px) {
+      .img-none {
+        display: none;
+      }
+    }
+  }
+}

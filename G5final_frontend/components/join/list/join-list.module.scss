@@ -1,0 +1,41 @@
+
+.ji-card{
+    max-width: 367px;
+    min-width: 335px;
+    overflow: hidden;
+    border-bottom: 4px solid #ccc;
+    &:hover{
+        img{
+            scale: 1.025;
+            transition: ease 0.5s;
+        }
+        border-bottom:4px solid #F4B434 ;
+    }
+}
+.colicon{
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+}
+.card-image{
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.card-title{
+    overflow: hidden;
+    text-overflow: ellipsis;   
+    white-space: nowrap;
+}
+.card-body{
+    padding: 30px;
+    font-size: 14px;
+    p{
+        border-radius: 2px;
+        line-height: 26px;
+    }
+}
+.cancelBtn{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}

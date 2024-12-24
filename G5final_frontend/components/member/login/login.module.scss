@@ -1,0 +1,85 @@
+.auth-container {
+    width: 80%;
+    box-shadow: 0px 4px 7.5px 7px rgba(40,55, 90, 0.2);
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.signup-form {
+    background-color: #fff;
+    color: #F4B13E;
+    input {
+        border-color: #F4B13E;
+        &::placeholder {
+            color: #F4B13E;
+        }
+    }
+}
+
+// .siginup-pic-div {
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+// }
+// .login-pic-div {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     z-index: 3;
+// }
+
+
+.btn-verify {
+    color: #fff;
+    background-color: #F4B13E;
+}
+
+.login-form {
+    color: #22355C;
+    input {
+        border-color: #22355C;
+        &::placeholder {
+            color: #22355C;
+        }
+    }
+}
+
+.pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+.btn-custom {
+    padding: 10px;
+}
+
+.btn-google {
+    @media screen and (min-width: 430px) {
+        position: absolute;
+        top: 7px;
+        left: 17px;
+        
+    }
+}
+.span-google {
+    display: none;
+    @media screen and (min-width: 430px) {
+        display: block;
+    }
+}
+
+.eye-btn {
+    all: unset; /* 清除所有預設樣式 */
+    cursor: pointer; /* 設定手型游標 */
+    display: inline-flex; /* 保持圖標對齊 */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* 將圖片從容器的一半開始(圖片頂端) */
+    transform: translateY(-50%); /* 將圖片修正從頂端開始的偏移問題 */
+    right: 15px;
+}
