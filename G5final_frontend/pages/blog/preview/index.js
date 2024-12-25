@@ -4,8 +4,8 @@ import { useAuth } from '@/hooks/use-auth';
 import Image from 'next/image';
 import moment from 'moment';
 import Account from '@/components/blog/account/account';
-import { handleSubmit } from '@/hooks/use-blog/useSubmit ';
-import { handleSaveDraft } from '@/hooks/use-blog/useSaveDraft';
+import { handleSubmit } from '@/components/blog/utils/handleSubmit ';
+import { handleSaveDraft } from '@/components/blog/utils/handleSaveDraft';
 
 // icons
 import { BsBookmarkFill, BsReplyFill } from 'react-icons/bs';

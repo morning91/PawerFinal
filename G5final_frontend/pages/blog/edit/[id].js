@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 import Breadcrumbs from '@/components/breadcrumbs/breadcrumbs';
 import Myeditor from '@/components/join/CKEditorTest';
-import { useBlogDel } from '@/hooks/use-blog/useBlogDel';
+import { useBlogDel } from '@/hooks/use-del';
 import Tag from '@/components/blog/tag/tag';
 
 import { BsBookmarkFill, BsReplyFill } from 'react-icons/bs';

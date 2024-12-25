@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
 import { useRouter } from 'next/router';
 import { useAuth } from '@/hooks/use-auth';
-import { useBlogDel } from '@/hooks/use-blog/useBlogDel';
+import { useBlogDel } from '@/hooks/use-del';
 
 export default function DeleBtn({ btnName }) {
   const router = useRouter();

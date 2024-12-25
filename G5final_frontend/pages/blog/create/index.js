@@ -10,8 +10,8 @@ import Breadcrumbs from '@/components/breadcrumbs/breadcrumbs';
 import Myeditor from '@/components/join/CKEditorTest';
 import Tag from '@/components/blog/tag/tag';
 
-import { handleSubmit } from '@/hooks/use-blog/useSubmit ';
-import { handleSaveDraft } from '@/hooks/use-blog/useSaveDraft';
+import { handleSubmit } from '@/components/blog/utils/handleSubmit ';
+import { handleSaveDraft } from '@/components/blog/utils/handleSaveDraft';
 
 import { BsBookmarkFill } from 'react-icons/bs';
 import { FaUpload, FaEye, FaTrashAlt } from 'react-icons/fa';
